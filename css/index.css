@@ -25,6 +25,10 @@ img {
   height: auto;
 }
 
+main {
+  padding: 120px 0;
+}
+
 /* CONTAINER */
 .container {
   width: 100%;
@@ -246,6 +250,10 @@ img {
 
   .certificate__details {
     text-align: center;
+  }
+
+  main {
+    padding: 0;
   }
 }
 
