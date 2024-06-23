@@ -89,6 +89,19 @@ main {
 
 .certificate__course-logo {
   padding-bottom: 28px;
+  animation: zoom;
+  animation-duration: 0.3s;
+}
+
+@keyframes zoom {
+  0% {
+    opacity: 0.5;
+    transform: scale(0.4);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .certificate__course-title {
@@ -150,7 +163,7 @@ main {
 .certificate__footer-top-image {
   position: absolute;
   left: 0;
-  top: -20px;
+  top: 0px;
   right: 0;
   bottom: 0;
   width: 100%;
