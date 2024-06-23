@@ -45,11 +45,15 @@
     <main class="container">
       <div class="certificate">
         <div class="certificate__header">
-          <img
-            class="certificate__header-top-image"
-            src="/img/top@2x.png"
-            alt="certificate top background image"
-          />
+          <picture class="certificate__header-top-image">
+            <source srcset="/img/top@1x.png" media="(max-width: 799px)" />
+            <source srcset="/img/top@2x.png" media="(min-width: 800px)" />
+            <img
+              class="certificate__header-top-image"
+              src="/img/top@2x.png"
+              alt="certificate top background image"
+            />
+          </picture>
 
           <div class="certificate__header-wrapper">
             <div class="certificate__course">
@@ -57,11 +61,22 @@
                 <span class="name">“Algoritmlar”</span>
                 kursini tamomlagani haqida
               </p>
-              <img
-                class="certificate__course-logo"
-                src="/img/qirikki@2x.png"
-                alt=""
-              />
+
+              <picture>
+                <source
+                  srcset="/img/qirikki@1x.png"
+                  media="(max-width: 799px)"
+                />
+                <source
+                  srcset="/img/qirikki@2x.png"
+                  media="(min-width: 800px)"
+                />
+                <img
+                  class="certificate__course-logo"
+                  src="/img/qirikki@2x.png"
+                  alt="42 logo image"
+                />
+              </picture>
             </div>
             <h1 class="certificate__title">SERTIFIKAT</h1>
             <h3 class="certificate__reciepent">Jasur Hakimov</h3>
@@ -85,11 +100,16 @@
         </div>
 
         <div class="certificate__footer">
-          <img
-            class="certificate__footer-top-image"
-            src="/img/bottom@2x.png"
-            alt="certificate top background image"
-          />
+          <picture>
+            <source srcset="/img/bottom@1x.png" media="(max-width: 799px)" />
+            <source srcset="/img/bottom@2x.png" media="(min-width: 800px)" />
+            <img
+              class="certificate__footer-top-image"
+              src="/img/bottom@2x.png"
+              alt="certificate top background image"
+            />
+          </picture>
+
           <div class="certificate__footer-wrapper">
             <div class="certificate__signature">
               <img
