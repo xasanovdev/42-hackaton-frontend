@@ -29,9 +29,7 @@ img {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1254px;
-  padding-left: 32px;
-  padding-right: 32px;
+  max-width: 1190px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -96,7 +94,7 @@ img {
   color: var(--gray-100);
   font-weight: 600;
   font-size: 34px;
-  line-height: 42px;
+  line-height: 1.235294118;
 }
 
 .certificate__course-title .name {
@@ -107,7 +105,7 @@ img {
   color: #fff;
   font-weight: 800;
   font-size: 147.23px;
-  line-height: 172.7px;
+  line-height: 1.172994634;
   letter-spacing: 0.07em;
   text-align: left;
   margin-top: 36px;
@@ -118,7 +116,7 @@ img {
   color: #fff;
   font-size: 56px;
   font-weight: 700;
-  line-height: 65.69px;
+  line-height: 1.173035714;
   text-align: left;
   margin-top: 30px;
 }
@@ -128,7 +126,7 @@ img {
   color: var(--gray-200);
   font-size: 26px;
   font-weight: 500;
-  line-height: 42px;
+  line-height: 1.615384615;
   text-align: left;
   width: 100%;
   max-width: 793px;
@@ -162,7 +160,6 @@ img {
 .certificate__footer-wrapper {
   display: flex;
   justify-content: space-between;
-  justify-items: flex-end;
   position: relative;
   z-index: 100;
 }
@@ -184,7 +181,7 @@ img {
 
 .certificate__signature-inner span {
   font-size: 24px;
-  line-height: 35px;
+  line-height: 1.458333333;
   text-align: left;
 }
 
@@ -204,7 +201,7 @@ img {
   color: var(--gray-500);
   font-size: 24px;
   font-weight: 500;
-  line-height: 35px;
+  line-height: 1.458333333;
 }
 
 .certificate__qrcode {
@@ -217,4 +214,108 @@ img {
 .certificate__qrcode-img {
   position: absolute;
   z-index: 100;
+}
+
+/* ========== Responsive Certificate ========== */
+
+@media screen and (max-width: 1200px) {
+  .certificate__title {
+    font-size: 120px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .certificate__title {
+    font-size: 80px;
+    margin-top: 12px;
+    text-align: center;
+  }
+  .certificate__reciepent {
+    font-size: 48px;
+    margin-top: 12px;
+    text-align: center;
+  }
+
+  .certificate__course {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .certificate__course-title {
+    text-align: center;
+  }
+
+  .certificate__details {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .certificate__header {
+    padding: 65px 30px 120px;
+  }
+
+  .certificate__footer {
+    padding: 120px 30px 60px;
+  }
+
+  .certificate__footer-wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .certificate__date {
+    align-self: start;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .certificate__title {
+    font-size: 64px;
+    margin-top: 12px;
+    text-align: center;
+  }
+
+  .certificate__reciepent {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .certificate__details {
+    font-size: 20px;
+  }
+
+  .certificate__course-logo {
+    max-width: 360px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .certificate__title {
+    font-size: 48px;
+    margin-top: 12px;
+    text-align: center;
+  }
+
+  .certificate__reciepent {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .certificate__header {
+    padding: 45px 16px 120px;
+  }
+
+  .certificate__footer {
+    padding: 120px 16px 45px;
+  }
+
+  .certificate__course-title {
+    font-size: 24px;
+  }
+
+  .certificate__course-logo {
+    max-width: 240px;
+  }
 }
