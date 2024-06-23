@@ -114,7 +114,18 @@ main {
 }
 
 .certificate__course-title .name {
+  animation: toYellow;
+  animation-duration: 2s;
   color: var(--yellow);
+}
+
+@keyframes toYellow {
+  0% {
+    color: var(--gray-100);
+  }
+  100% {
+    color: var(--yellow);
+  }
 }
 
 .certificate__title {
