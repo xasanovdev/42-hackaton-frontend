@@ -1,5 +1,9 @@
 /* CUSTOM PROPS */
 :root {
+  --gray-100: #d9d9d9;
+  --gray-200: #a8a8a8;
+  --dark: #1c1c1c;
+  --yellow: #ffd600;
 }
 
 /* GLOBAL */
@@ -8,7 +12,7 @@ body {
   flex-direction: column;
   padding: 0;
   margin: 0;
-  font-weight: 400;
+  font-family: "Work Sans", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   background-color: #fff;
@@ -22,9 +26,9 @@ img {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1254px;
+  padding-left: 32px;
+  padding-right: 32px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -40,4 +44,90 @@ img {
   only screen and (min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
+}
+
+.certificate {
+  position: relative;
+  background-color: var(--dark);
+  padding: 65px 115px 206px;
+}
+
+.certificate {
+  z-index: 5;
+}
+
+.certificate-header__top-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 10;
+}
+
+.certificate-header__wrapper {
+  z-index: 100;
+}
+
+.certificate-course {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.certificate-course__logo {
+  padding-bottom: 28px;
+}
+
+.certificate-course__title {
+  max-width: 384px;
+  width: 100%;
+  color: var(--gray-100);
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 42px;
+}
+
+.certificate-course__title .name {
+  color: var(--yellow);
+}
+
+.certificate-title {
+  color: #fff;
+  font-weight: 800;
+  font-size: 147.23px;
+  line-height: 172.7px;
+  letter-spacing: 0.07em;
+  text-align: left;
+  margin-top: 36px;
+  white-space: nowrap;
+}
+
+.certificate-reciepent {
+  color: #fff;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 65.69px;
+  text-align: left;
+  margin-top: 30px;
+}
+
+.certificate-details {
+  margin-top: 24px;
+  color: var(--gray-200);
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: left;
+  width: 100%;
+  max-width: 793px;
+}
+
+.certificate-details .date,
+.certificate-details .name {
+  color: #fff;
 }

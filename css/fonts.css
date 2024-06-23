@@ -33,7 +33,7 @@
 @font-face {
   font-family: "Work Sans";
   font-display: swap;
-  src: url("/fonts/work-sans/static/WorkSans-Black.ttf") format("truetype");
+  src: url("/fonts/work-sans/static/WorkSans-ExtraBold.ttf") format("truetype");
   font-weight: 800;
   font-style: normal;
 }
